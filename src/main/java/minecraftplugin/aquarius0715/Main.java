@@ -153,7 +153,7 @@ public final class Main extends JavaPlugin implements Listener {
         inv = Bukkit.createInventory(null, 9, ChatColor.GOLD + "" + ChatColor.BOLD + "Select Team");
 
         //新しいアイテムを作成
-        ItemStack item = new ItemStack(Material.BLUE_CONCRETE);
+        ItemStack item = new ItemStack(Material.LAPIS_BLOCK);
         //アイテムメタを作成
         ItemMeta meta = item.getItemMeta();
         //loreのリストを作成
@@ -173,37 +173,37 @@ public final class Main extends JavaPlugin implements Listener {
         inv.setItem(0, item);
 
         //レッドチームの作成
-        item.setType(Material.RED_CONCRETE);
+        item.setType(Material.REDSTONE);
         meta.setDisplayName(ChatColor.DARK_RED + "RED TEAM");
         item.setItemMeta(meta);
         inv.setItem(1, item);
 
         //グリーンチームの作成
-        item.setType(Material.GREEN_CONCRETE);
+        item.setType(Material.SLIME_BALL);
         meta.setDisplayName(ChatColor.DARK_GREEN + "GREEN TEAM");
         item.setItemMeta(meta);
         inv.setItem(2, item);
 
         //オレンジチームの作成
-        item.setType(Material.ORANGE_CONCRETE);
+        item.setType(Material.SPONGE);
         meta.setDisplayName(ChatColor.GOLD + "ORANGE TEAM");
         item.setItemMeta(meta);
         inv.setItem(3, item);
 
         //パープルチームの作成
-        item.setType(Material.PURPLE_CONCRETE);
+        item.setType(Material.CHORUS_FRUIT);
         meta.setDisplayName(ChatColor.DARK_PURPLE + "PURPLE TEAM");
         item.setItemMeta(meta);
         inv.setItem(4, item);
 
         //ブルーチームの作成
-        item.setType(Material.CYAN_CONCRETE);
+        item.setType(Material.DIAMOND);
         meta.setDisplayName(ChatColor.BLUE + "CYAN TEAM");
         item.setItemMeta(meta);
         inv.setItem(5, item);
 
         //ブラックチームの作成
-        item.setType(Material.BLACK_CONCRETE);
+        item.setType(Material.OBSIDIAN);
         meta.setDisplayName(ChatColor.BLACK + "BLACK TEAM");
         item.setItemMeta(meta);
         inv.setItem(6, item);
